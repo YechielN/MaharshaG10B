@@ -321,6 +321,9 @@ a.LO:hover {
       .name {
         font-size: 7px !important;
       }
+      .clock {
+        display: none;
+      }
 }
     .item {
       grid-column: span 2;
@@ -411,7 +414,7 @@ a.LO:hover {
 </body>
 <footer>
 <!DOCTYPE html>
-<html lang="en" class="html1">
+<html lang="en" class="html1" class="calendarPC">
 
 <head>
 
@@ -429,9 +432,9 @@ a.LO:hover {
 
   
   
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css' class="calendarPC">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css' class="calendarPC">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' class="calendarPC">
   
 <style>
 .btn{
@@ -849,6 +852,12 @@ animation-name:modalopen;
   opacity: 0.6;
   border-bottom: 5px solid #FF4D55;
  width: 59px;
+}
+
+@media screen and (max-width: 531px) {
+  .fc {
+        display: none !important;
+      }
 }
 
 .duration {
